@@ -1,0 +1,14 @@
+$schema: https://json.schemastore.org/electron-builder.json
+appId: com.github.iffy.electronupdaterexample
+afterSign: ./build/notarize.js
+mac:
+  category: your.app.category.type
+win:
+  target: nsis
+nsis:
+  oneClick: false
+linux:
+  category: your.app.category.type,
+  target: AppImage
+publish:
+  provider: github

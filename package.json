@@ -18,22 +18,5 @@
   "dependencies": {
     "electron-log": "^4.4.8",
     "electron-updater": "^4.6.5"
-  },
-  "build": {
-    "appId": "com.github.iffy.electronupdaterexample",
-    "afterSign": "./build/notarize.js",
-    "mac": {
-      "category": "your.app.category.type"
-    },
-    "win": {
-      "target": "nsis"
-    },
-    "nsis": {
-      "oneClick": false
-    },
-    "linux": {
-      "category": "your.app.category.type",
-      "target": "AppImage"
-    }
   }
 }
