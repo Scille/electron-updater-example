@@ -13,9 +13,9 @@ const {autoUpdater} = require("electron-updater");
 // This logging setup is not required for auto-updates to work,
 // but it sure makes debugging easier :)
 //-------------------------------------------------------------------
+log.transports.file.level = false;
+log.transports.console.format = '[{h}:{i}:{s}.{ms}] [{level}]: {text}';
 autoUpdater.logger = log;
-autoUpdater.logger.transports.file.level = 'debug';
-autoUpdater.logger.transports.console.level = 'debug';
 log.info('App starting...');
 
 //-------------------------------------------------------------------
