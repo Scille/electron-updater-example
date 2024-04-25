@@ -14,7 +14,8 @@ const {autoUpdater} = require("electron-updater");
 // but it sure makes debugging easier :)
 //-------------------------------------------------------------------
 autoUpdater.logger = log;
-autoUpdater.logger.transports.file.level = 'info';
+autoUpdater.logger.transports.file.level = 'debug';
+autoUpdater.logger.transports.console.level = 'debug';
 log.info('App starting...');
 
 //-------------------------------------------------------------------
@@ -143,5 +144,5 @@ app.on('ready', function()  {
 // autoUpdater.on('download-progress', (progressObj) => {
 // })
 // autoUpdater.on('update-downloaded', (info) => {
-//   autoUpdater.quitAndInstall();  
+//   autoUpdater.quitAndInstall();
 // })
