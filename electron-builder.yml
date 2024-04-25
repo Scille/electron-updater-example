@@ -1,6 +1,10 @@
 $schema: https://json.schemastore.org/electron-builder.json
 appId: com.github.iffy.electronupdaterexample
 afterSign: ./build/notarize.js
+files:
+  - "main.js"
+  - "version.html"
+  - "!node_modules/electron-log/src/**/__specs__"
 mac:
   category: your.app.category.type
 win:
