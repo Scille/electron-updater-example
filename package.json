@@ -4,6 +4,9 @@
   "main": "main.js",
   "description": "electron-updater example project",
   "author": "Matt Haggard",
+  "engines": {
+    "node": "^18.20.2"
+  },
   "scripts": {
     "publish": "electron-builder -p always"
   },
