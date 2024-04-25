@@ -9,6 +9,7 @@
   },
   "scripts": {
     "list-pack-file": "asar list dist/linux-unpacked/resources/app.asar",
+    "extract-main-file": "cd dist && asar extract-file linux-unpacked/resources/app.asar main.js",
     "publish": "electron-builder -p always"
   },
   "devDependencies": {
